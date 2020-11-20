@@ -279,9 +279,9 @@
 
         <div class="footer-send">
           <strong class="following-text">Подпишитесь на рассылку</strong>
-          <form action="#" method="POST" class="email-form" autocomplete="off">
-            <input class="email-field" type="email" name="email" placeholder="Email">
-            <button class="email-btn btn" >Подписаться
+          <form action="#" method="POST" class="email-form" autocomplete="on">
+            <input class="email-field" type="email" name="email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+            <button class="email-btn btn" type="submit">Подписаться
               <svg class="icon-send"  width="24" height="24">   
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>

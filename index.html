@@ -427,9 +427,9 @@
 
         <div class="footer-send">
           <strong class="following-text">Подпишитесь на рассылку</strong>
-          <form action="#" method="POST" class="email-form" autocomplete="off">
-            <input class="email-field" type="email" name="email" placeholder="Email">
-            <button class="email-btn btn" >Подписаться
+          <form action="#" method="POST" class="email-form" autocomplete="on">
+            <input class="email-field" type="email" name="email" placeholder="Email" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
+            <button class="email-btn btn" type="submit">Подписаться
               <svg class="icon-send"  width="24" height="24">   
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
@@ -449,49 +449,50 @@
           </svg>
         </button>
 
-        <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
-        <form class="form" action="#" method="POST" autocomplete="off">
+        <section>
+          <b class="form-title">Оставьте свои данные, мы вам перезвоним</b>
+          <form class="form" action="#" method="POST" autocomplete="off">
 
-          <label class="field-form"> 
-            <svg class="form-icon" width="18" height="18">
-              <use href="./images/sprite.svg#icon-person"></use>
-            </svg>
-            <span class="form-label">Имя</span> 
-            <input class="form-input" type="text" name="username">
-          </label>
+            <label class="field-form"> 
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-person"></use>
+              </svg>
+              <span class="form-label">Имя</span> 
+              <input class="form-input" type="text" name="username">
+            </label>
 
-          <label class="field-form">
-            <svg class="form-icon" width="18" height="18">
-              <use href="./images/sprite.svg#icon-phone"></use>
-            </svg>
-            <span class="form-label">Телефон</span>
-            <input class="form-input" type="tel" name="tel">
-          </label>
+            <label class="field-form">
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-phone"></use>
+              </svg>
+              <span class="form-label">Телефон</span>
+              <input class="form-input" type="tel" name="tel">
+            </label>
 
-          <label class="field-form">
-            <svg class="form-icon" width="18" height="18">
-              <use href="./images/sprite.svg#icon-email"></use>
-            </svg>
-            <span class="form-label">Почта</span>
-            <input class="form-input" type="email" name="email">
-          </label>
+            <label class="field-form">
+              <svg class="form-icon" width="18" height="18">
+                <use href="./images/sprite.svg#icon-email"></use>
+              </svg>
+              <span class="form-label">Почта</span>
+              <input class="form-input" type="email" name="email">
+            </label>
 
-          <label class="field-form comment">
-            <span class="form-label">Комментарий</span>
-            <textarea class="form-input" name="comments" rows="9" placeholder="Введите текст"></textarea>
-          </label>
+            <label class="field-form comment">
+              <span class="form-label">Комментарий</span>
+              <textarea class="form-input" name="comments" rows="9" placeholder="Введите текст"></textarea>
+            </label>
 
-          <label class="policy">
-            <input class="policy-input" type="checkbox" name="policy" value="policy-agree">
-            <span class="icon-policy"></span>
-            <span class="policy-label">Соглашаюсь с рассылкой и принимаю 
-              <a class="policy-link" href="#">Условия договора</a>
-            </span>
-          </label>
+            <label class="policy">
+              <input class="policy-input" type="checkbox" name="policy" value="policy-agree">
+              <span class="icon-policy"></span>
+              <span class="policy-label">Соглашаюсь с рассылкой и принимаю 
+                <a class="policy-link" href="#">Условия договора</a>
+              </span>
+            </label>
 
-          <button class="submit-btn btn" type="submit">Отправить</button>
-        </form>
-        
+            <button class="submit-btn btn" type="submit">Отправить</button>
+          </form>
+        </section>        
       </div>
     </div>
 
